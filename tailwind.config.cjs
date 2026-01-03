@@ -3,6 +3,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+     fontFamily: {
+  sans: ['"Source Serif 4"', "Georgia", "serif"],
+  serif: ['"Source Serif 4"', "Georgia", "serif"]
+},
       colors: {
         ink: {
           50: "#f7f7f5",

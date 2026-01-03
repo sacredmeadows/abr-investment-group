@@ -1,6 +1,6 @@
 export const SITE = {
   name: "ABR Investment Group",
-  tagline: "Residential + commercial wholesaling",
+  tagline: "Residential & Commercial Real Estate Services",
   regionLine: "Serving property owners and investors across South Florida",
   contact: {
     phoneDisplay: "(305) 555-0123",
@@ -27,9 +27,9 @@ export const SITE = {
 
 export const COPY = {
   home: {
-    heroTitle: "A minimal, professional wholesaling partner.",
+    heroTitle: "More than just real estate professionals. We're business partners.",
     heroSubtitle:
-      "We wholesale both commercial and residential properties with a streamlined, no-drama process—built for speed, clarity, and serious execution.",
+      "We invest in both commercial and residential properties with a streamlined, no-drama process—built for speed, clarity, and serious execution.",
     primaryCtas: [
       { label: "I’m Selling", href: "/sellers" },
       { label: "I’m Buying", href: "/buyers" }
@@ -91,6 +91,6 @@ export const COPY = {
   },
   disclaimers: {
     general:
-      "ABR Investment Group is a wholesaling business. Information on this site is for general purposes and does not constitute legal or financial advice."
+      "ABR Investment Group is a real estate investment firm. Information on this site is for general purposes and does not constitute legal or financial advice."
   }
 };
