@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="py-14 sm:py-18">
+      <section className="py-14 sm:py-18 border-b border-black/10">
         <Container>
           <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-7">
@@ -77,7 +77,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="py-14">
+<section className="py-14 border-b border-black/10">
         <Container>
           <SectionHeading
             eyebrow="Approach"

@@ -9,7 +9,7 @@ const active = "bg-black/5";
 
 export default function Nav() {
   return (
-    <header className="sticky top-0 z-40 border-b border-black/10 bg-ink-50/80 backdrop-blur">
+  <header className="sticky top-0 z-40 border-b border-black/10 bg-ink-100/80 backdrop-blur">
       <Container className="py-4 flex items-center justify-between">
         <Link to="/" className="group inline-flex items-center gap-3">
           <div className="h-9 w-9 rounded-xl bg-ink-900 text-ink-50 grid place-items-center shadow-soft transition group-hover:translate-y-[-1px]">
