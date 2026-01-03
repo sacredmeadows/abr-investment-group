@@ -117,7 +117,7 @@ export default function Sellers() {
               </p>
 
               <div className="mt-8 rounded-xl2 bg-white shadow-hairline p-5">
-                <div className="text-xs uppercase tracking-wider text-ink-600">
+                <div className="text-xs uppercase tracking-wider text-ink-500">
                   Quick note
                 </div>
                 <p className="mt-3 text-sm text-ink-700 leading-relaxed">
@@ -208,7 +208,7 @@ export default function Sellers() {
                       {submitting ? "Submitting..." : "Request offer"}
                     </Button>
 
-                    <p className="text-xs text-ink-500 leading-relaxed">
+                    <p className="text-xs text-white/70 leading-relaxed">
                       By submitting, you agree to be contacted about your request. No spam—just the
                       next steps.
                     </p>

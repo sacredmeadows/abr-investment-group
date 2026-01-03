@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="py-14 sm:py-18 border-b border-black/10">
+      <section className="py-14 sm:py-18 border-b border-white/10">
         <Container>
           <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-7">
@@ -50,7 +50,7 @@ export default function Home() {
 
             <div className="lg:col-span-5">
               <div className="rounded-xl2 bg-white shadow-soft p-6">
-                <div className="text-xs uppercase tracking-wider text-ink-600">What we do</div>
+                <div className="text-xs uppercase tracking-wider text-ink-500">What we do</div>
                 <Divider className="my-4" />
                 <ul className="space-y-3 text-sm text-ink-700">
                   <li className="flex gap-3">
@@ -69,7 +69,10 @@ export default function Home() {
 
                 <div className="mt-6 flex gap-3">
                   <Button to="/sellers" className="w-full">Start as Seller</Button>
-                  <Button to="/buyers" variant="secondary" className="w-full">Start as Buyer</Button>
+                  <Button to="/buyers" variant="primary" className="w-full">
+  Start as Buyer
+</Button>
+
                 </div>
               </div>
             </div>

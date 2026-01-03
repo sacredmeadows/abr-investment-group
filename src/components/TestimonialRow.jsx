@@ -24,8 +24,9 @@ export default function TestimonialRow() {
     <div className="grid gap-4 md:grid-cols-3">
       {placeholders.map((t, idx) => (
         <Card key={idx} className="p-6">
-          <p className="text-sm text-ink-700 leading-relaxed">{t.quote}</p>
-          <div className="mt-4 text-xs text-ink-500">{t.who}</div>
+<p className="text-sm text-white leading-relaxed">{t.quote}</p>
+<div className="mt-4 text-xs text-white/70">{t.who}</div>
+
         </Card>
       ))}
     </div>

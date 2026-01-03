@@ -8,12 +8,13 @@ const base =
 
 const variants = {
   primary:
-    "bg-ink-900 text-ink-50 shadow-soft hover:translate-y-[-1px] hover:shadow-md active:translate-y-[0px] active:shadow-soft",
+    "bg-white text-black shadow-md hover:bg-neutral-200 hover:translate-y-[-1px] active:translate-y-[0px]",
   secondary:
-    "bg-white text-ink-900 shadow-hairline hover:bg-ink-100 hover:translate-y-[-1px] active:translate-y-[0px]",
+    "border border-white text-white hover:bg-white hover:text-black transition",
   ghost:
-    "bg-transparent text-ink-900 hover:bg-black/5"
+    "text-white hover:bg-white/10"
 };
+
 
 export default function Button({
   to,

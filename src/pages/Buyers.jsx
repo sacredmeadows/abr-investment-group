@@ -123,8 +123,8 @@ export default function Buyers() {
               </div>
 
               <div className="mt-8 rounded-xl2 bg-white shadow-hairline p-6">
-                <div className="text-sm font-semibold text-ink-900">{COPY.buyers.comingSoonTitle}</div>
-                <p className="mt-2 text-sm text-ink-600 leading-relaxed">
+                <div className="text-sm font-semibold text-ink-500">{COPY.buyers.comingSoonTitle}</div>
+                <p className="mt-2 text-sm text-ink-500 leading-relaxed">
                   {COPY.buyers.comingSoonBody}
                 </p>
               </div>
@@ -243,7 +243,7 @@ export default function Buyers() {
                       {submitting ? "Submitting..." : "Submit buy box"}
                     </Button>
 
-                    <p className="text-xs text-ink-500 leading-relaxed">
+                    <p className="text-xs text-white/70 leading-relaxed">
                       We’ll review and follow up with next-step questions only if needed.
                     </p>
                   </div>

@@ -39,7 +39,8 @@ export default function Contact() {
   function validate(v) {
     const next = {};
     if (!required(v.name)) next.name = "Please enter your name.";
-    if (!required(v.email) || !isEmail(v.email)) next.email = "Please enter a valid email address.";
+    if (!required(v.email) || !isEmail(v.email))
+      next.email = "Please enter a valid email address.";
     if (!required(v.message)) next.message = "Please enter a message.";
     return next;
   }
@@ -73,7 +74,8 @@ export default function Contact() {
       window.location.assign("/thanks");
     } catch (err) {
       setErrors({
-        submit: "Something went wrong submitting the form. Please try again or email us directly."
+        submit:
+          "Something went wrong submitting the form. Please try again or email us directly."
       });
       setSubmitting(false);
     }
@@ -83,6 +85,7 @@ export default function Contact() {
     <section className="py-14 sm:py-18">
       <Container>
         <div className="grid gap-10 lg:grid-cols-12">
+          {/* LEFT COLUMN */}
           <div className="lg:col-span-5">
             <SectionHeading
               eyebrow="Contact"
@@ -90,24 +93,40 @@ export default function Contact() {
               subtitle="If you prefer, email or call. Otherwise, send a short message and we’ll respond."
             />
 
-            <div className="mt-8 rounded-xl2 bg-white shadow-hairline p-6">
-              <div className="text-xs uppercase tracking-wider text-ink-600">Contact</div>
-              <Divider className="my-4" />
+            {/* CONTRAST CONTACT INFO BOX (WHITE ON BLACK PAGE) */}
+            <div className="mt-8 rounded-xl2 bg-white text-black shadow-hairline p-6">
+              <div className="text-xs uppercase tracking-wider text-neutral-600">
+                Contact
+              </div>
+
+              <Divider className="my-4 bg-black/10" />
+
               <div className="space-y-2 text-sm">
-                <a className="block hover:underline" href={SITE.contact.phoneHref}>
+                <a
+                  className="block font-medium hover:underline text-black"
+                  href={SITE.contact.phoneHref}
+                >
                   {SITE.contact.phoneDisplay}
                 </a>
-                <a className="block hover:underline" href={`mailto:${SITE.contact.email}`}>
+                <a
+                  className="block hover:underline text-black"
+                  href={`mailto:${SITE.contact.email}`}
+                >
                   {SITE.contact.email}
                 </a>
               </div>
             </div>
           </div>
 
+          {/* RIGHT COLUMN */}
           <div className="lg:col-span-7">
             <Card className="p-6 sm:p-8 shadow-soft">
-              <div className="text-sm font-semibold text-ink-900">Send a message</div>
-              <p className="mt-2 text-sm text-ink-600">Keep it concise. We’ll follow up.</p>
+              <div className="text-sm font-semibold text-white">
+                Send a message
+              </div>
+              <p className="mt-2 text-sm text-white/70">
+                Keep it concise. We’ll follow up.
+              </p>
               <Divider className="my-6" />
 
               <form
@@ -119,7 +138,12 @@ export default function Contact() {
                 onSubmit={onSubmit}
               >
                 <input type="hidden" name="form-name" value="contact" />
-                <input type="hidden" name="bot-field" value={values.botField} onChange={onChange} />
+                <input
+                  type="hidden"
+                  name="bot-field"
+                  value={values.botField}
+                  onChange={onChange}
+                />
 
                 <div className="grid gap-4">
                   <FormField
@@ -153,7 +177,9 @@ export default function Contact() {
                   />
 
                   {errors.submit ? (
-                    <p className="text-sm text-ink-700 bg-black/5 rounded-xl p-3">{errors.submit}</p>
+                    <p className="text-sm text-white/80 bg-white/10 rounded-xl p-3">
+                      {errors.submit}
+                    </p>
                   ) : null}
 
                   <Button type="submit" disabled={submitting} className="w-full">
